@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    width: 85%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.list {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+}
+
+.link:hover {
+    color: blue;
+}
+
+.title {
+    margin: 13% 0px 0px 8%;
+}
+
+.title_h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#last_name {
+    color: darkgoldenrod;
+    font-size:50px ;
+    font-weight: 400;
+}
+
+.title-link {
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: lavenderblush;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.images {
+    position: absolute;
+    bottom: 0px;
+    width: 45%;
+    height: 80%;
+    right: 30px;
+}
+
+.imagegroup {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape {
+    bottom: 70px;
+
+}
+
+.images:hover #girl {
+    left: 40%;
+}
+#about{
+    margin:13% 8% 0px 8%;
+
+}
+.about-head{
+    text-align: center;
+}
+.about-head>h2{
+    font-size: 30px;
+}
+.about-head>span{
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.about-image img{
+    width: 80%;
+    border-radius: 1 rem;
+}
+.about-details{
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1rem;
+
+}
+.info-box {
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+}
+/*skill section*/
+#skill{
+    margin: 8% 8% 0% 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 1rem;
+}
+.skill-img img{
+    width: 50%;
+    padding-left: 39rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h1,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+   .base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(2, 2, 108);
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+   } 
+   .html-bar{
+    background-color: darkgoldenrod;
+    width:95% ;
+   }
+   .css-bar{
+    background-color: darkgoldenrod;
+    width:84% ;
+   }
+   .js-bar{
+    background-color: darkgoldenrod;
+    width:90% ;
+   }
+   .react-bar{
+    background-color: darkgoldenrod;
+    width:87% ;
+   }
+   .icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+   }
+   .icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+   }
+   .icon i{
+    font-size: 30px;
+    color: rgb(23, 2, 82);
+   }
+   .icon:hover{
+    background-image: linear-gradient(to bottom right,darkgoldenrod,rgb(188, 139, 15),rgb(2, 2, 84));
+   }
+   .icon:hover i{
+    color:white;
+    animation:shake 0.75s ;
+   }
+   @keyframes shake{
+    20%{
+         transform: rotate(15deg);
+        }
+    40%{
+         transform: rotate(-15deg);
+         }
+    60%{
+         transform: rotate(15deg);
+         }
+   }
+footer{
+    margin:3rem 0px ;
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,darkgoldenrod,rgb(188, 139, 15),rgb(2, 2, 84));
+    margin: 0px 20px 50px 0px;
+}
+.up-arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color:rgb(2, 2, 84) ;
+    border-radius: 5px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
